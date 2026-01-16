@@ -28,7 +28,7 @@
       hero_subtitle:
         "Analizo y visualizo datos para mejorar productos y procesos. Me enfoco en métricas accionables, calidad de datos y comunicación clara para la toma de decisiones.",
       hero_note:
-        "Tip: este sitio es bilingüe (ES/EN) y tiene modo oscuro/claro, pensado para entrevistas y reclutadores.",
+        "Este portfolio presenta proyectos de análisis de datos, con foco en métricas accionables y comunicación clara para la toma de decisiones.",
 
       cta_primary: "Contactar",
       cta_secondary: "Ver proyectos",
@@ -337,3 +337,4 @@
         : "Abriendo tu app de email...";
   });
 })();
+
