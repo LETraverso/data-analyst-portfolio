@@ -28,7 +28,7 @@
       hero_subtitle:
         "Analizo y visualizo datos para mejorar productos y procesos. Me enfoco en métricas accionables, calidad de datos y comunicación clara para la toma de decisiones.",
       hero_note:
-        "Este portfolio presenta proyectos de análisis de datos, con foco en métricas accionables y comunicación clara para la toma de decisiones.",
+        "Interesada en proyectos donde los datos se convierten en decisiones claras y accionables.",
 
       cta_primary: "Contactar",
       cta_secondary: "Ver proyectos",
@@ -131,7 +131,7 @@
       hero_subtitle:
         "I analyze, visualize, and communicate insights to improve products and processes. I focus on actionable metrics, data quality, and storytelling.",
       hero_note:
-        "Tip: bilingual (ES/EN) + dark/light mode, designed for recruiters and interviews.",
+        "Interested in projects where data drives clear, actionable decision-making.",
 
       cta_primary: "Contact",
       cta_secondary: "View projects",
@@ -337,4 +337,5 @@
         : "Abriendo tu app de email...";
   });
 })();
+
 
