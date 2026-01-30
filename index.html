@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julieta Delafuente • Data Analyst</title>
+    <meta
+      name="description"
+      content="Portfolio profesional de analista de datos. Proyectos, skills y contacto."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Fondo decorativo sutil -->
+    <div class="bg" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="grain"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Julieta de la Fuente</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="nav__link" href="#about" data-i18n="nav_about"></a>
+          <a class="nav__link" href="#skills" data-i18n="nav_skills"></a>
+          <a class="nav__link" href="#projects" data-i18n="nav_projects"></a>
+          <a
+            class="nav__link"
+            href="#experience"
+            data-i18n="nav_experience"
+          ></a>
+          <a class="nav__link" href="#contact" data-i18n="nav_contact"></a>
+        </nav>
+
+        <div class="actions">
+          <!-- Idioma -->
+          <div class="lang" role="group" aria-label="Idioma">
+            <button
+              class="lang__btn"
+              type="button"
+              id="langES"
+              aria-label="Español"
+              title="Español"
+            >
+              ES
+            </button>
+            <button
+              class="lang__btn"
+              type="button"
+              id="langEN"
+              aria-label="English"
+              title="English"
+            >
+              EN
+            </button>
+          </div>
+
+          <!-- Toggle tema (perilla) -->
+          <button
+            class="iconbtn iconbtn--switch"
+            id="themeToggle"
+            type="button"
+            aria-label="Cambiar tema"
+            aria-pressed="false"
+          >
+            <span class="switch" aria-hidden="true">
+              <span class="switch__thumb"></span>
+            </span>
+          </button>
+
+          <a class="btn btn--primary" id="ctaTop" href="#contact">
+            <span data-i18n="cta_primary"></span>
+          </a>
+
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Abrir menú"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobileMenu" hidden>
+        <div class="container mobile__inner">
+          <a class="mobile__link" href="#about" data-i18n="nav_about"></a>
+          <a class="mobile__link" href="#skills" data-i18n="nav_skills"></a>
+          <a class="mobile__link" href="#projects" data-i18n="nav_projects"></a>
+          <a
+            class="mobile__link"
+            href="#experience"
+            data-i18n="nav_experience"
+          ></a>
+          <a class="mobile__link" href="#contact" data-i18n="nav_contact"></a>
+
+          <div class="mobile__row">
+            <div class="lang" role="group" aria-label="Idioma">
+              <button
+                class="lang__btn"
+                type="button"
+                id="langES_m"
+                aria-label="Español"
+                title="Español"
+              >
+                🇪🇸
+              </button>
+              <button
+                class="lang__btn"
+                type="button"
+                id="langEN_m"
+                aria-label="English"
+                title="English"
+              >
+                🇬🇧
+              </button>
+            </div>
+
+            <button
+              class="iconbtn iconbtn--switch"
+              id="themeToggle_m"
+              type="button"
+              aria-label="Cambiar tema"
+              aria-pressed="false"
+            >
+              <span class="switch" aria-hidden="true">
+                <span class="switch__thumb"></span>
+              </span>
+            </button>
+          </div>
+
+          <a class="btn btn--primary mobile__cta" href="#contact">
+            <span data-i18n="cta_primary"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- HERO -->
+      <section class="hero container">
+        <div class="hero__left">
+          <p class="pill">
+            <span class="pill__dot" aria-hidden="true"></span>
+            <span data-i18n="hero_badge"></span>
+          </p>
+
+          <h1 class="h1">
+            <span data-i18n="hero_title_a"></span>
+            <span class="grad" data-i18n="hero_title_b"></span>
+          </h1>
+
+          <p class="lead" data-i18n="hero_subtitle"></p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">
+              <span data-i18n="cta_secondary"></span>
+            </a>
+            <a
+              class="btn btn--ghost"
+              id="cvLink"
+              href="./assets/cv-julieta.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span data-i18n="cta_cv"></span>
+            </a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">SQL</span>
+            <span class="chip">Audience research</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Excel</span>
+          </div>
+        </div>
+
+        <aside class="hero__right">
+          <div class="card card--profile">
+            <div class="profile">
+              <div class="avatar">
+                <img src="./img/juli.jpg" alt="Foto de Julieta de la Fuente" />
+              </div>
+              <div>
+                <div class="profile__name">Julieta de la Fuente</div>
+                <div class="profile__role" data-i18n="hero_role"></div>
+              </div>
+            </div>
+
+            <div class="profile__meta">
+              <div class="meta">
+                <div class="meta__k" data-i18n="meta_location_k"></div>
+                <div class="meta__v" id="locationValue">Argentina</div>
+              </div>
+              <div class="meta">
+                <div class="meta__k" data-i18n="meta_focus_k"></div>
+                <div class="meta__v" data-i18n="meta_focus_v"></div>
+              </div>
+              <div class="meta">
+                <div class="meta__k" data-i18n="meta_open_k"></div>
+                <div class="meta__v" data-i18n="meta_open_v"></div>
+              </div>
+            </div>
+
+            <div class="profile__actions">
+              <a
+                class="btn btn--soft"
+                href="https://www.linkedin.com/in/julieta-de-la-fuente/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                class="btn btn--soft"
+                id="githubLink"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--soft"
+                id="emailLink"
+                href="mailto:julidelafuente86@gmail.com?subject=Contacto%20desde%20portfolio"
+                >Email</a
+              >
+            </div>
+
+            <p class="tiny muted" data-i18n="hero_note"></p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section container">
+        <header class="section__head">
+          <h2 class="h2" data-i18n="about_title"></h2>
+          <p class="muted" data-i18n="about_subtitle"></p>
+        </header>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 class="h3" data-i18n="about_card1_title"></h3>
+            <p class="muted" data-i18n="about_card1_text"></p>
+          </article>
+
+          <article class="card">
+            <h3 class="h3" data-i18n="about_card2_title"></h3>
+            <p class="muted" data-i18n="about_card2_text"></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section container">
+        <header class="section__head">
+          <h2 class="h2" data-i18n="skills_title"></h2>
+          <p class="muted" data-i18n="skills_subtitle"></p>
+        </header>
+
+        <div class="skills">
+          <div class="card">
+            <div class="skill__top">
+              <span class="icon" aria-hidden="true">✍️</span>
+              <h3 class="h3" data-i18n="skills_stack_title"></h3>
+            </div>
+            <ul class="list">
+              <li>SQL (analysis and metrics)</li>
+              <li>
+                Audience research (audience segmentation, needs, and behavior)
+              </li>
+              <li>Power BI</li>
+              <li>Excel avanzado</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="skill__top">
+              <span class="icon" aria-hidden="true">🎯</span>
+              <h3 class="h3" data-i18n="skills_methods_title"></h3>
+            </div>
+            <ul class="list">
+              <li data-i18n="skills_m1"></li>
+              <li data-i18n="skills_m2"></li>
+              <li data-i18n="skills_m3"></li>
+              <li data-i18n="skills_m4"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section container">
+        <header class="section__head">
+          <h2 class="h2" data-i18n="projects_title"></h2>
+          <p class="muted" data-i18n="projects_subtitle"></p>
+        </header>
+
+        <div class="projects">
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen1-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen1-chica.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p1_title"></h3>
+            <p class="muted" data-i18n="p1_desc"></p>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen2-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen2-grande.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p2_title"></h3>
+            <p class="muted" data-i18n="p2_desc"></p>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen3-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen3-chica.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p3_title"></h3>
+            <p class="muted" data-i18n="p3_desc"></p>
+          </article>
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen4-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen4-chica.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p4_title"></h3>
+            <p class="muted" data-i18n="p4_desc"></p>
+          </article>
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen5-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen5-chica.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p5_title"></h3>
+            <p class="muted" data-i18n="p5_desc"></p>
+          </article>
+          <article class="card project">
+            <div class="project__top">
+              <a
+                class="link"
+                href="img/imagen6-grande.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver proyecto"
+              >
+                <img
+                  src="img/imagen6-chica.jpg"
+                  alt="Proyecto de ventas y rendimiento"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <h3 class="h3" data-i18n="p6_title"></h3>
+            <p class="muted" data-i18n="p6_desc"></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section container">
+        <header class="section__head">
+          <h2 class="h2" data-i18n="exp_title"></h2>
+          <p class="muted" data-i18n="exp_subtitle"></p>
+        </header>
+
+        <div class="timeline card">
+          <div class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__body">
+              <div class="titem__top">
+                <strong data-i18n="exp1_role"></strong>
+                <span class="muted" data-i18n="exp1_time"></span>
+              </div>
+              <div class="muted" data-i18n="exp1_desc"></div>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__body">
+              <div class="titem__top">
+                <strong data-i18n="exp2_role"></strong>
+                <span class="muted" data-i18n="exp2_time"></span>
+              </div>
+              <div class="muted" data-i18n="exp2_desc"></div>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="titem__dot" aria-hidden="true"></div>
+            <div class="titem__body">
+              <div class="titem__top">
+                <strong data-i18n="exp3_role"></strong>
+                <span class="muted" data-i18n="exp3_time"></span>
+              </div>
+              <div class="muted" data-i18n="exp3_desc"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section container">
+        <header class="section__head">
+          <h2 class="h2" data-i18n="contact_title"></h2>
+          <p class="muted" data-i18n="contact_subtitle"></p>
+        </header>
+
+        <div class="contact">
+          <div class="card">
+            <h3 class="h3" data-i18n="contact_card_title"></h3>
+            <p class="muted" data-i18n="contact_card_text"></p>
+
+            <div class="contact__actions">
+              <a class="btn btn--primary" id="emailBtn" href="#">
+                <span data-i18n="contact_email"></span>
+              </a>
+              <a
+                class="btn btn--primary"
+                href="https://www.linkedin.com/in/julieta-de-la-fuente/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="contact__mini">
+              <div class="mini">
+                <div class="mini__k" data-i18n="mini_stack_k"></div>
+                <div class="mini__v" data-i18n="mini_stack_v"></div>
+              </div>
+              <div class="mini">
+                <div class="mini__k" data-i18n="mini_interest_k"></div>
+                <div class="mini__v" data-i18n="mini_interest_v"></div>
+              </div>
+            </div>
+          </div>
+
+          <form class="card form" id="contactForm">
+            <label class="field">
+              <span data-i18n="form_name"></span>
+              <input type="text" name="name" placeholder="Julieta" required />
+            </label>
+
+            <label class="field">
+              <span data-i18n="form_message"></span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Hola Julieta..."
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              <span data-i18n="form_send"></span>
+            </button>
+
+            <p class="tiny muted" id="formHint" data-i18n="form_hint"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">
+          © <span id="year"></span> Julieta de la Fuente · Data Analyst
+        </p>
+        <a class="link" href="#home" data-i18n="footer_top"></a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
